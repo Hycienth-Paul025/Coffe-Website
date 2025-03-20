@@ -1,0 +1,169 @@
+
+          OLD 
+
+          <div class="popular-swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="popular-card swiper-slide">
+                <div class="popular-images">
+                  <div class="popular-shape"></div>
+                  <img
+                    src="asset/img/coffee-bean-1.png"
+                    class="popular-bean-1"
+                  />
+
+                  <img
+                    src="asset/img/coffee-bean-1.png"
+                    class="popular-bean-2"
+                  />
+
+                  <img
+                    src="asset/img/iced-coffee-4.png"
+                    class="popular-coffee"
+                  />
+                </div>
+
+                <div class="popular-data">
+                  <h2 class="popular-name">VANILLA LATTE</h2>
+
+                  <p class="popular-description">
+                    Indulge in the simplicity of our delicious cold brew coffee
+                  </p>
+
+                  <a href="#contact" class="button button-dark"
+                    >Order now: $19.90</a
+                  >
+                </div>
+              </article>
+
+              <article class="popular-card swiper-side">
+                <div class="popular-images">
+                  <div class="popular-shape"></div>
+                  <img
+                    src="asset/img/coffee-bean-1.png"
+                    class="popular-bean-1"
+                  />
+
+                  <img
+                    src="asset/img/coffee-bean-1.png"
+                    class="popular-bean-2"
+                  />
+
+                  <img src="asset/img/iced-coffee.png" class="popular-coffee" />
+                </div>
+
+                <div class="popular-data">
+                  <h2 class="popular-name">CLASSIC COFFEE</h2>
+
+                  <p class="popular-description">
+                    Indulge in the simplicity of our delicious cold brew coffee
+                  </p>
+
+                  <a href="#contact" class="button button-dark"
+                    >Order now: $19.90</a
+                  >
+                </div>
+              </article>
+
+              <article class="popular-card swiper-side">
+                <div class="popular-images">
+                  <div class="popular-shape"></div>
+                  <img
+                    src="asset/img/coffee-bean-1.png"
+                    class="popular-bean-1"
+                  />
+
+                  <img
+                    src="asset/img/coffee-bean-1.png"
+                    class="popular-bean-2"
+                  />
+
+                  <img
+                    src="asset/img/coffee-milk-1.png"
+                    class="popular-coffee"
+                  />
+                </div>
+
+                <div class="popular-data">
+                  <h2 class="popular-name">MOCHA COFFEE</h2>
+
+                  <p class="popular-description">
+                    Indulge in the simplicity of our delicious cold brew coffee
+                  </p>
+
+                  <a href="#contact" class="button button-dark"
+                    >Order now: $19.90</a
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+
+          
+.swiper-wrapper {
+  width: 100%;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.swiper-slide {
+  display: grid;
+  grid-column: 1/3;
+  place-content: center;
+}
+
+
+.popular-images{
+  display: grid;
+  justify-items: center;
+  justify-self: center;
+  width: 290px;
+}
+
+.popular-images img{
+  position: absolute;
+  place-items: center;
+}
+
+.popular-coffee {
+  width: 130px;
+  top: -1.5rem;
+}
+
+.popular-bean-1 {
+  width: 30px;
+  top: 3rem;
+  left: 6.5rem;
+  transition: transform 0.5s 0.1s;
+}
+
+.popular-images:hover .popular-bean-1 {
+  transform: translate(-0.5rem, -0.25rem);
+}
+
+.popular-bean-2 {
+  width: 20px;
+  right: 3rem;
+  bottom: 2rem;
+  rotate: 75deg;
+  filter: blur(1px);
+  transition: transform 0.5s 0.1s;
+}
+
+.popular-images:hover .popular-bean-2 {
+  transform: translate(0.5rem, -0.25rem);
+}
+
+.popular-data {
+  text-align: center;
+}
+
+.popular-name {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  margin-bottom: 0.5rem;
+}
+
+.popular-description {
+  margin-bottom: 1.5rem;
+}
+ 

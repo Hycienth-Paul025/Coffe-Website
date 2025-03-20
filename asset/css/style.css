@@ -380,7 +380,6 @@ section {
   position: absolute;
 }
 
-
 .popular-coffee {
   width: 130px;
   top: -1.5rem;
@@ -853,6 +852,10 @@ section {
     left: 3rem;
   }
 
+  .about-leaf-2 {
+    right: 2.25rem;
+  }
+
   .product-container {
     grid-template-columns: 160px;
     justify-content: center;
@@ -873,6 +876,14 @@ section {
 }
 
 /* For Medium Devices  */
+
+@media screen and (max-width: 576px) {
+  .about-leaf-1 {
+    left: 3.75rem;
+    top: 4rem;
+  }
+}
+
 @media screen and (min-width: 576px) {
   .home-container,
   .about-container {
@@ -1047,7 +1058,7 @@ section {
     padding-bottom: 2rem;
   }
 
-  .popular-swiper{
+  .popular-swiper {
     width: 100%;
   }
 

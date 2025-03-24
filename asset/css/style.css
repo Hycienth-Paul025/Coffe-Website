@@ -219,6 +219,10 @@ section {
   box-shadow: 0 4px 16px #03261e4d;
 }
 
+.active{
+  color:#14b892;
+}
+
 /*  Home  */
 
 .home-container {

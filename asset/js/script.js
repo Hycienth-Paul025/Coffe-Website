@@ -32,6 +32,28 @@ const linkAction = () => {
 
 navLinkEl.forEach((n) => n.addEventListener("click", linkAction));
 
+// Active link
+
+let navlistEl = document.querySelectorAll(".nav-link");
+
+//whenever we click on any link the active class will be added
+
+navlistEl.forEach((listEl) => {
+  listEl.addEventListener("click", () => {
+    removeActive();
+    listEl.classList.add("active");
+    console.log("clicked");
+  });
+});
+
+//whenever we click on any current link the active class on the previous link will be removed
+
+function removeActive() {
+  navlistEl.forEach((listEl) => {
+    listEl.classList.remove("active");
+  });
+}
+
 // Add Header Shadow
 
 const shadowHeader = () => {
@@ -65,7 +87,7 @@ const sr = ScrollReveal({
   distance: "60px",
   duration: 2000,
   delay: 300,
-    reset: true, // Animation reset
+  //  reset: true, // Animation reset
 });
 
 // HOME SCROLL REVEAL
@@ -133,9 +155,9 @@ sr.reveal(`.footer-container, .footer-copy`);
 
 const swiper = new Swiper(".swiper", {
   loop: true,
-grabCursor: true,
-spaceBetween: 32,/* 
-slidesPerView: "auto", */
+  grabCursor: true,
+  spaceBetween: 32 /* 
+slidesPerView: "auto", */,
 
   breakpoints: {
     1150: {
@@ -143,9 +165,9 @@ slidesPerView: "auto", */
       slidesPerView: 3,
     },
 
-    600:{
+    600: {
       spaceBetween: 42,
       slidesPerView: 2,
-    }
+    },
   },
 });

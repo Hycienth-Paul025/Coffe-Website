@@ -380,6 +380,14 @@ section {
   justify-items: center;
 }
 
+.popular-shape {
+  width: 195px;
+  height: 195px;
+  background: var(--first-color);
+  border-radius: 50%;
+  clip-path: inset(50% 0 0 0);
+}
+
 .popular-image img {
   position: absolute;
 }
@@ -411,14 +419,6 @@ section {
 
 .popular-card:hover .popular-bean-2 {
   transform: translate(0.5rem, -0.25rem);
-}
-
-.popular-shape {
-  width: 195px;
-  height: 195px;
-  background: var(--first-color);
-  border-radius: 50%;
-  clip-path: inset(50% 0 0 0);
 }
 
 .popular-data {

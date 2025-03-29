@@ -42,7 +42,6 @@ navlistEl.forEach((listEl) => {
   listEl.addEventListener("click", () => {
     removeActive();
     listEl.classList.add("active");
-    console.log("clicked");
   });
 });
 

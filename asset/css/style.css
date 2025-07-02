@@ -172,6 +172,12 @@ section {
 
 /*  Navigation for mobile devices */
 @media screen and (max-width: 1150px) {
+.nav-container{
+   justify-content: space-between;
+    padding-inline: 20px;
+    background: red;
+}
+
   .nav-menu {
     position: fixed;
     top: -120%; /* Hidden */
@@ -955,6 +961,7 @@ section {
 
   .nav {
     height: calc(var(--header-height) + 2rem);
+   
   }
 
   .section {

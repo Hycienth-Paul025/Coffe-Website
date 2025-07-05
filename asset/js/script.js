@@ -189,7 +189,7 @@ slidesPerView: "auto", */,
     },
 
     600: {
-      spaceBetween: 42,
+      spaceBetween: 35,
       slidesPerView: 2,
     },
   },

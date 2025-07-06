@@ -110,7 +110,7 @@ const sr = ScrollReveal({
   distance: "60px",
   duration: 2000,
   delay: 300,
-  reset: true, // Animation reset
+  // reset: true, // Animation reset
 });
 
 // HOME SCROLL REVEAL
